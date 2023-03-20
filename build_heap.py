@@ -13,7 +13,7 @@ def build_heap(data):
                 break
             if d+1 < n and data[d+1] < data[d]:
                 d = d+1
-            if data[j] > data[z]:
+            if data[j] > data[d]:
                 swaps.append((c, d))
                 data[j], data[d] = data[d], data[c]
                 c = d
